@@ -96,6 +96,7 @@ Main learning objectives:
 
 ## 📂 Project Structure
 
+```text
 app/
 ├── java/com/atividadeum/cartaomobile/
 │   └── MainActivity.kt
@@ -107,7 +108,7 @@ app/
 │   ├── drawable/
 │   ├── anim/
 │   └── values/
-
+```
 ---
 
 ## 📄 License
