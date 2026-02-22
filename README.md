@@ -1,11 +1,8 @@
 # 💳 Mobile Credit Card Simulator (Academic Project)
 
-![Platform](https://img.shields.io/badge/Platform-Android-green)
-![Language](https://img.shields.io/badge/Language-Kotlin-purple)
-![IDE](https://img.shields.io/badge/IDE-Android%20Studio-blue)
-![Min SDK](https://img.shields.io/badge/Min%20SDK-Android%205.0%2B-orange)
-![Status](https://img.shields.io/badge/Status-Academic%20Project-yellow)
-
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![XML](https://img.shields.io/badge/UI-XML-blue?style=for-the-badge)
 ---
 
 ## 📌 About The Project
