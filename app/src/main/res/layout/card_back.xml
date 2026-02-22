@@ -10,13 +10,14 @@
         android:layout_marginTop="20dp"/>
 
     <ImageView
+        android:id="@+id/imgBandeiraBack"
         android:layout_width="61dp"
         android:layout_height="42dp"
         android:layout_gravity="end|bottom"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/visa" />
+        android:src="@drawable/elo" />
 
     <LinearLayout
         android:layout_width="wrap_content"

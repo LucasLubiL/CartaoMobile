@@ -5,6 +5,7 @@ import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.ViewFlipper
 import androidx.activity.enableEdgeToEdge
@@ -23,14 +24,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var cardView: CardView;
 
 
-
     private lateinit var txtNomeCartao: TextView;
     private lateinit var txtCVVCartao: TextView;
     private lateinit var txtValidadeCartao: TextView;
     private lateinit var txtNumeroCartao: TextView;
-
-
-
 
 
     private lateinit var editNome: EditText;
@@ -41,6 +38,9 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var btnEditar: Button;
     private lateinit var btnSalvar: Button;
+
+    private lateinit var imgBandeiraFront: ImageView;
+    private lateinit var imgBandeiraBack: ImageView;
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -80,6 +80,9 @@ class MainActivity : AppCompatActivity() {
         btnEditar = findViewById(R.id.btnEditar);
         btnSalvar = findViewById(R.id.btnSalvar);
 
+        imgBandeiraFront = findViewById(R.id.imgBandeiraFront)
+        imgBandeiraBack = findViewById(R.id.imgBandeiraBack)
+
         editNome.isEnabled = false;
         editCVV.isEnabled = false;
         editValidade.isEnabled = false;
@@ -103,13 +106,15 @@ class MainActivity : AppCompatActivity() {
             aoDigitarCVV(it.toString())
         }
 
-
     }
 
     fun aoDigitarNome(texto: String){
         if(texto.length <= 20){
 
             txtNomeCartao.text = texto.uppercase(getDefault());
+        }
+        if(texto.length == 0){
+            txtNomeCartao.text = "DIGITE SEU NOME AQUI";
         }
     }
 
@@ -125,6 +130,9 @@ class MainActivity : AppCompatActivity() {
             editNumero.setText(formatado)
             editNumero.setSelection(formatado.length)
         }
+
+        attBandeira(texto);
+
     }
 
     fun aoDigitarCVV(texto: String){
@@ -167,6 +175,24 @@ class MainActivity : AppCompatActivity() {
             editValidade.setSelection(resultado.length)
         }
 
+    }
+
+    fun attBandeira(numero: String){
+
+        val clean = numero.replace(" ", "")
+
+        if (clean.startsWith("4")) {
+            imgBandeiraFront.setImageResource(R.drawable.visa)
+            imgBandeiraBack.setImageResource(R.drawable.visa)
+
+        } else if (clean.startsWith("5") || clean.startsWith("2")) {
+            imgBandeiraFront.setImageResource(R.drawable.mastercard)
+            imgBandeiraBack.setImageResource(R.drawable.mastercard)
+
+        } else {
+            imgBandeiraFront.setImageResource(R.drawable.elo)
+            imgBandeiraBack.setImageResource(R.drawable.elo)
+        }
     }
 
     fun editDados(view: View){

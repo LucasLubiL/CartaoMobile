@@ -22,13 +22,14 @@
         android:src="@drawable/ouro" />
 
     <ImageView
+        android:id="@+id/imgBandeiraFront"
         android:layout_width="61dp"
         android:layout_height="42dp"
         android:layout_gravity="end|bottom"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/visa" />
+        android:src="@drawable/elo" />
 
     <TextView
         android:id="@+id/txtNomeCartao"
