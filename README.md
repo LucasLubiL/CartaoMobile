@@ -51,6 +51,18 @@ This repository must not be used for commercial distribution, monetization, or b
 
 ---
 
+## 📸 App Screenshot
+
+<div align="center">
+
+<img width="253" height="568" alt="image" src="https://github.com/user-attachments/assets/6d02bd6d-7380-4ae0-98df-a30ce2f402c4" />
+<img width="257" height="571" alt="image" src="https://github.com/user-attachments/assets/2483e5b2-5f36-4493-8b53-548ca74dcef1" />
+
+
+</div>
+
+---
+
 ## 🧠 Card Brand Detection Logic
 
 The application identifies the card brand based on the first digits:
