@@ -3,23 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="61dp"
-        android:layout_gravity="start|top"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/logobdb" />
 
     <ImageView
-        android:layout_width="116dp"
-        android:layout_height="69dp"
+        android:layout_width="21dp"
+        android:layout_height="29dp"
         android:layout_gravity="end|top"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ouro" />
+        android:src="@drawable/aproximacao" />
 
     <ImageView
         android:id="@+id/imgBandeiraFront"
