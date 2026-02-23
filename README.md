@@ -10,7 +10,6 @@
 This project is a **Credit Card UI Simulator** developed as an academic assignment for the discipline:
 
 > **Programming for Mobile Devices (6th semester)**  
-> Bachelor's Degree in **Analysis and Systems Development (ADS)**
 
 The application simulates a credit card interface where the user can:
 
